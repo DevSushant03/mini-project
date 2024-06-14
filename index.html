@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initia-scale=1.0">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+   
+<div class="proj-1">
+   <form class="ageCalculate">
+     <h3>  Age Calculator </h3>   
+      <input id="year" type="number" placeholder="Enter your birth year"/>
+      <button type="button" value="Generate" onclick="getAge()">Generate</button>
+  <p id="result">what is my age 🤔 ?</p>     
+   </form>  
+</div>
+     
+ <!------------------------------->
+
+<div class="proj-2">
+   <div class="left">
+      <h1 id="date"> </h1>
+      <p id="day"></p>
+      <span></span>
+   </div>
+   <div class="right">
+      <h2 id="month"> </h2>
+      <p id="currentyear">2023 </p>    <span></span>
+   </div> 
+</div>
+
+<!------------------------------->
+     <div class="proj-3">
+        <h3>Text to speech <b>Converter</b></h3>
+        <textarea class="paragraph"  placeholder="Write something....."></textarea>
+        <div class="row">
+           <select class="voiceStyle"></select>
+           <button class="convert">Convert</button>   
+        </div>
+        
+     </div>
+
+<!------------------------------->
+<div class="popupbar" id="popup">
+   <button onclick="closePopup()">Go</button>
+</div>
+
+     <div class="proj-4">
+        <audio id="scream">
+          <source src="scream.mp3" type="audio/mp3">
+        </audio>
+        <button onclick="showPopup()">PopUp</button>
+     </div>
+     
+     
+     
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
